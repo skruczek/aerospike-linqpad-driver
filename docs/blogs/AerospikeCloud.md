@@ -1,4 +1,4 @@
-# Unlock Aerospike Cloud: Exploring the Power of Aerospike LINQPad Driver
+# Unlock Aerospike Cloud | Exploring the Power of Aerospike LINQPad Driver
 
 ![A red square with white letters Description automatically generated](media/bd6bd8f5e41cb288b90bd0ec6ad130df.png)
 
@@ -6,7 +6,7 @@ The Aerospike LINQPad driver is now able to connect to the Aerospike Cloud provi
 
 This includes a graphical interface, [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/) support, and enhanced driver features to support Aerospike API. For an overview of the Aerospike LINQPad driver, please [review this blog post](https://aerospike.com/developer/blog/aerospike-for-linqpad).
 
-Let’s look at the new connection dialog and some of the features of the LINQPad driver.
+In this blog, we look at the new connection dialog and walk through some of the features of the LINQPad driver.
 
 ## Connection Dialog
 
