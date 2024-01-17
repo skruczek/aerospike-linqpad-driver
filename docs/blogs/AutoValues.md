@@ -1,10 +1,10 @@
-# Simplicity: Using Auto-Values in Aerospike LINQPad Driver
+# Simple ways to use Auto-Values in Aerospike LINQPad Driver
 
 ![](media/5a006743c567ff229be7d3e1f76dde33.png)
 
 When working with NoSQL databases like Aerospike where a record has unstructured data. Strongly typed languages like C\# add programming complexity by having to check the existences of “bin(s)” (i.e., columns) within a record and the fact that different records for the same bin can have different data type.
 
-Auto-Values (AValue is the class) simplify the need to check, cast, or convert values between Aerospike data types and .Net datatypes. They provide a rich set of operations and seamlessly work with any type of data including collections and JSON. They provide protection against null reference exceptions, invalid cast exceptions, etc.
+In this blog, you'll learn how Auto-Values (AValue is the class) simplify the need to check, cast, or convert values between Aerospike data types and .Net datatypes. They provide a rich set of operations and seamlessly work with any type of data including collections and JSON. They provide protection against null reference exceptions, invalid cast exceptions, etc.
 
 ## Example Set
 
@@ -18,7 +18,7 @@ As a side note, the LINQPad connection tree (left side) is expanded showing the 
 
 Below are examples showing the difference between using Aerospike data types, C\# data types, and Auto-Values.
 
-Below is an example when **not** using Auto-Values:
+Here is an example when **not** using Auto-Values:
 
 ![A screenshot of a computer Description automatically generated](media/d5608f79e4e004b9c67bb50dc399f9df.png)
 
@@ -36,7 +36,7 @@ Auto-Values not only take care of casting but also converting. Conversion betwee
 
 Auto-Values support all standard operations like “==”, “\>”, “\<”, etc. They also support all the equality, comparison, etc. operations.
 
-Below are some additional examples:
+Here are some additional examples:
 
 ![A screenshot of a computer Description automatically generated](media/9bbfeed286979e90d0b063f79dc6edb2.png)
 
@@ -64,7 +64,7 @@ Below are examples where a .Net DateTimeOffset, DateTime, and TimeSpan instance 
 
 ![A screenshot of a computer Description automatically generated](media/2176692840fe02bac6b38ba566daf383.png)
 
-BTW, you can control how values are converted and display based on the properties found in the “Display/Conversion Options” section of the connection dialog.
+Note that you can control how values are converted and display based on the properties found in the “Display/Conversion Options” section of the connection dialog.
 
 ## Conversion
 
@@ -95,7 +95,7 @@ Below are some examples using “Contains” and “FindAll” methods:
 
 ![A screenshot of a computer Description automatically generated](media/ca64e7f2ad49b1195eaae3f3e179b3ab.png)
 
-You can find additional examples in the [LINQPad sample folder](https://github.com/aerospike-community/aerospike-linqpad-driver/tree/main/linqpad-samples/Cloud).
+Additional examples are included in the [LINQPad sample folder](https://github.com/aerospike-community/aerospike-linqpad-driver/tree/main/linqpad-samples/Cloud).
 
 Below is an example of “drilling” into several different sub-collections finding all invoices for a certain song track resulting in a collection of customers. You can find this example in the “[CDT-Json-Docs](https://github.com/aerospike-community/aerospike-linqpad-driver/blob/main/linqpad-samples/Native/CDT-Json-Docs.linq)” sample LINQPad script.
 
